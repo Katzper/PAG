@@ -33,26 +33,26 @@ public class RandomNumGen {
 
         System.out.print("Wygenerowane liczby: ");
         for (var elem : arr)
-            System.out.print(elem.toString() + ' ');
+            System.out.print(elem.toString() + ", ");
 
         System.out.println(' ');
 
         System.out.print("Lista pierwszych wygenerowanych elementów: ");
         for (int i = 0; i < amount; ++i)
-            System.out.print(arr.get(i).toString() + ' ');
+            System.out.print(arr.get(i).toString() + ", ");
 
-        System.out.println(', ');
+        System.out.println(' ');
 
         System.out.print("Lista ostatnich wygenerowanych argumentów: ");
         for (int i = arr.size() - 1; i > arr.size() - amount - 1; --i)
-            System.out.print(arr.get(i).toString() + ' ');
+            System.out.print(arr.get(i).toString() + ", ");
 
         System.out.println(' ');
 
         Set<Integer> set = new TreeSet<>(arr);
         System.out.print("Sorted unique values: ");
         for (var elem : set)
-            System.out.print(elem.toString() + ' ');
+            System.out.print(elem.toString() + ", ");
 
         System.out.println(' ');
     }
